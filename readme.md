@@ -10,7 +10,7 @@ In order to submit assignments, please use the following steps
 1. [Fork this repo][1] so that you have a working version
 1. [Clone the forked repo][2] to your local computer
 1. Create a folder named with the project name and your name, example `basic-css-layout-dale-sande`
-1. Once completed with your assignment, commit code to the master branch, push Githib `git push origin master`
+1. Once completed with your assignment, commit code to the master branch and push to Github `git push origin master`
 1. From __your fork__ of the project, initiate a pull request to the parent repo
 
 ##Assignment review
@@ -28,7 +28,7 @@ In your `.bash_profile` add the following alias
 alias upstream="git remote add upstream \$@"
 ```
 
-From the command line you simply need to refer to the alias and add the path to the upstream repo
+From the command line you simply need to refer to the alias and add the path to the upstream repo as shown in the following example.
 
 ```
 $ upstream https://github.com/blackfalcon/unicorn-class-css-section.git
@@ -43,7 +43,7 @@ In your `.gitconfig` add the following alias
 pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 ```
 
-From the command line, within the project repo, enter the following command
+From the command line, within the project repo, enter the following command to pull latest code from the upstream master.
 
 ```
 git pu 
