@@ -7,8 +7,9 @@ Troubles:
 
 
 Questions:
-Is it necessary to specify some of the attributes for a checkbox or an input? For example: 
-		/*---<input type="checkbox" name="contactType" value="hi" ID="cbxHi">
-		<label for="cbxHi" name="msgType">Just saying hi!</label>---*/
-
+Is it necessary to specify some of the attributes for a checkbox or an input? For example:
+<html> 
+		<input type="checkbox" name="contactType" value="hi" ID="cbxHi">
+		<label for="cbxHi" name="msgType">Just saying hi!</label>
+</html>
 Do I need 'name' for both of these tags? Is it necessary to specify 'label for=""' for the label tag? If yes, why? For good practice? 
