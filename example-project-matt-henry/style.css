@@ -1,0 +1,53 @@
+header {
+	background-color: red;
+}
+
+h1, h3 {
+	font-family:Helvetica;
+}
+
+ul *{
+	display:inline;
+}
+
+a {
+	font-family:Helvetica;
+	color: black;
+	text-decoration:none;
+}
+
+a:hover {
+	font-weight:bold;
+}
+
+section {
+	max-width:75%;
+	float:left;
+}
+
+aside {
+	float:right;
+	max-width:25%;
+}
+
+footer {
+	clear:both;
+}
+
+form {
+    margin: 0 auto;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    text-align: left;
+}
+
+label + input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
