@@ -1,4 +1,4 @@
-// Styles
+// Main Stylesheet
 
 // Colors
 $black: rgb(68,68,68)
@@ -7,10 +7,10 @@ $blue:  rgb(135,206,250)
 $pink:  rgb(255,211,248)
 
 // Mixins
-@mixin border-radius
-  -webkit-border-radius: 6px
-  -moz-border-radius: 6px
-  border-radius: 6px
+@mixin border-radius($default-radius: 6px)
+  -webkit-border-radius: $default-radius
+  -moz-border-radius: $default-radius
+  border-radius: $default-radius
 
 // Font Stylings
 @font-face 
@@ -35,13 +35,17 @@ header
 
 // Content
 html 
-  background: url(../images/geometry.png) repeat
+  background: url(../assets/images/geometry.png) repeat
+  color: $black
+  font-family: "Arimo", arial
 
-body
+label
+  color: $black
+  display: inline-block
+  padding: 1em 0em
 
-  p
-    color: $black
-    font-family: "Arimo", arial
+button
+  display: block
 
 section
   padding: 2em
