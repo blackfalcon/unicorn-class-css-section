@@ -8,39 +8,45 @@
 </head>
 
 <body>
- <div>
   <h1>Be Mine, Seattle: Custom Walking Guides of the Emerald City</h1>
-  <h2>Request a Guide</h2>
-  <form>
-    <label>Your Info</label>
-    <input type="text" placeholder="Your Name" autofocus>
-    <input type="email" placeholder="Your Email">
-    <input type="phone" placeholder="Your Phone">
-    <label>Would you prefer a coffee or beer-oriented tour?</label>
-    <input type="radio" name="tour type" value="coffee">Coffee
-    <input type="radio" name="tour type" value="beer">Beer
-    <label>Select how many days you'll be here:</label>
-    <input type="number" min="0" max="10" step "1" value="5" name="newinput" />
-    <input type="submit" value="Send">
-  </form>
-  <article itemscope itemtype="http://schema.org/Restaurant">
-    <h2 itemprop="name">Sample Bratcher Favorite: Black Bottle</h2>
-    <img src="http://mapandmenu.com/wp-content/uploads/2012/05/Steamed-Clams-at-Black-Bottle.jpg" itemprop="image">
-    <p itemprop="description"><a href="http://blackbottleseattle.com/" itemprop="url">Black Bottle</a> is our favorite place to get cheap gourmet food. They serve shared plates, of which we always get broccoli blasted, potatoes cauliflower curried, and the mussels Marseilles. Their cocktails are fantastic and they also have allergy-friendly menus, making it exceptionally easy for everyone to enjoy something here.</p>
-    <span itemprop="acceptsReservations">
-      <em>Reservations accepted</em>
-    </span>.
-    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-      <span itemprop="streetAddress">2600 1st Avenue</span>
-      <span itemprop="addressLocality">Seattle</span>,
-      <span itemprop="addressRegion">WA</span>
-      <span itemprop="telephone">206-441-1500</span>
-    </div>
-    <div>Hours:
-      <meta itemprop="Su-Sa 16:00-02:00">Sun-Sat 4 pm - 2 am
-    </div>  
-  </article>
-</div>
+  <section>
+    <h2>Request a Guide</h2>
+    <form>
+      <label>Your Info</label>
+      <input type="text" placeholder="Your Name" autofocus>
+      <input type="email" placeholder="Your Email">
+      <input type="phone" placeholder="Your Phone">
+      <label>Would you prefer a coffee or beer-oriented tour?</label>
+      <input type="radio" name="tour type" value="coffee">Coffee
+      <input type="radio" name="tour type" value="beer">Beer
+      <label>Select how many days you'll be here:</label>
+      <input type="number" min="0" max="10" step "1" value="5" name="newinput" />
+      <input type="submit" value="Send">
+    </form>
+    <article itemscope itemtype="http://schema.org/Restaurant">
+      <h2 itemprop="name">Sample Bratcher Favorite: Black Bottle</h2>
+      <img src="http://mapandmenu.com/wp-content/uploads/2012/05/Steamed-Clams-at-Black-Bottle.jpg" itemprop="image">
+      <p itemprop="description"><a href="http://blackbottleseattle.com/" itemprop="url">Black Bottle</a> is our favorite place to get cheap gourmet food. They serve shared plates, of which we always get broccoli blasted, potatoes cauliflower curried, and the mussels Marseilles. Their cocktails are fantastic and they also have allergy-friendly menus, making it exceptionally easy for everyone to enjoy something here.</p>
+      <span itemprop="acceptsReservations">
+        <em>Reservations accepted</em>
+      </span>.
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">2600 1st Avenue</span>
+        <span itemprop="addressLocality">Seattle</span>,
+        <span itemprop="addressRegion">WA</span>
+        <span itemprop="telephone">206-441-1500</span>
+      </div>
+      <div>Hours:
+        <meta itemprop="Su-Sa 16:00-02:00">Sun-Sat 4 pm - 2 am
+      </div>
+    </article>
+  </section>
+
+  <aside>
+    <h4>The Bratchers love Seattle and want everyone to love it as much as they do.</h4>
+  </aside>
+
+  <footer>&copy;2013 Bratcher's Walking Guides to Seattle</footer>
 </body>
 
 </html>
