@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+[class*='container'] {
+    box-shadow: 0 0 1px 1px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-header, .site-footer {
+    background-color: red;
+    padding: 20px;
+}
+
+.section-nav {
+    background-color: orange;
+    padding: 20px 20px 9999px 20px;
+    margin-bottom: -9999px;
+}
+
+.hero-article {
+    background-color: green;
+}
+.hero-article header, .hero-article footer {
+    padding: 30px;
+    clear: both;
+}
+.hero-article div {
+    background-color: yellow;
+    padding: 20px;
+    height: 200px;
+}
+
+.standard-article {
+    background: lime;
+}
+
+.standard-article header {
+    padding: 20px;
+}
+
+.standard-article footer {
+    padding: 20px;
+    clear: both;
+}
+
+.standard-article div {
+    background-color: purple;
+    padding: 50px;
+}

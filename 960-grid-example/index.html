@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>960 Grid System demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link rel="stylesheet" href="public/style/960gs.css">
+        <link rel="stylesheet" href="public/style/application.css">
+    </head>
+    <body>
+        <div class="container_12">
+            <header class="site-header grid_12">
+                this is a header
+            </header>
+            <section class="main-section">
+                <nav class="section-nav grid_3">
+                    nav goes here
+                </nav>
+                <article class="hero-article grid_9">
+                    <header>Hero article header</header>
+                    <div class="grid_3 alpha">col 1</div>
+                    <div class="grid_3">col 2</div>
+                    <div class="grid_3 omega">col 3</div>
+                    <footer>Hero article footer</footer>
+                </article>
+                <article class="standard-article grid_9 push_3">
+                    <header>This is a standard article header</header>
+                    <div class="grid_6 push_3 alpha">A single column </div>
+                    <footer>This is a standard article footer</footer>
+                </article>
+            </section>
+            <footer class="site-footer grid_12">
+                this is a footer
+            </footer>
+        </div>
+    </body>
+</html>
