@@ -1,0 +1,83 @@
+#page-wrap {
+     width: 900px;
+     margin: 0 auto;
+	}
+	
+	article img {width: 100%;
+     margin: 0 auto;}
+	
+footer {background-image: url(images/lyonnette.png);
+	font-size: .85em;
+	color: #ce5227;
+	padding: 3px;
+	text-align:center;
+	}
+	
+body {margin-left:auto;
+	margin-right:auto;
+	background-image: url(images/woodBackground.jpg);
+	}
+
+.class-header {
+	background-image: url(images/lyonnette.png);}
+
+.logo {display: block;
+    width: 246px;
+	padding: 10px;
+    margin: 0 auto;}
+	
+.main-content
+	{padding: 25px 25px 0px 25px;
+	background-color: #ffffff;
+	}
+		
+.content
+	{
+	padding: 0px;
+	background-color: #ffffff;
+	}
+
+#emailaddress { border: 2px solid #999; 
+		height: 25px;
+		padding: 3px 10px 3px 10px;
+		border-radius:5px;
+		font-size: 20px;
+		margin: 5px auto;}
+		
+input:focus { border: 2px solid #6C6; }
+
+.button {padding: 10px 10px 10px 10px;
+	background-color: #ce5227;
+	border: none !important;
+	color: #ffffff;
+	margin: 5px 10px 10px 10px;
+	}
+
+form { 
+	width: 800px;
+    margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	}
+/** Navigation **/
+nav {background-color: orange;
+}
+
+nav ul {width: 300px;
+       	margin: 0 auto;
+		}
+nav ul li {
+		color: #ffffff;
+		list-style: none;
+	    display: inline-block;
+		padding: 12px 15px 12px 15px;
+	    margin: 0px;
+	    border-radius: 0px;
+	    position:relative;
+		background-color: #ce5227;
+}
+
+/** Type Styles **/
+header h1 {color: orange;
+			margin: auto;
+			text-align: center;}
