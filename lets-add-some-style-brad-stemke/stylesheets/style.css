@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "pacificoregular";
+  src: url("../fonts/pacifico-webfont.eot");
+  src: url("../fonts/pacifico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico-webfont.woff") format("woff"), url("../fonts/pacifico-webfont.ttf") format("truetype"), url("../fonts/pacifico-webfont.svg#pacificoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 23, ../sass/style.sass */
+h1 {
+  font-family: "pacificoregular", cursive;
+}
+
+/* line 26, ../sass/style.sass */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 29, ../sass/style.sass */
+a:hover {
+  color: lightskyblue;
+}
+
+/* line 33, ../sass/style.sass */
+header {
+  text-align: center;
+}
+
+/* line 37, ../sass/style.sass */
+html {
+  background: url(../assets/images/geometry.png) repeat;
+  color: #444444;
+  font-family: "Arimo", arial;
+}
+
+/* line 42, ../sass/style.sass */
+label {
+  color: #444444;
+  display: inline-block;
+  padding: 1em 0em;
+}
+
+/* line 47, ../sass/style.sass */
+button {
+  display: block;
+}
+
+/* line 50, ../sass/style.sass */
+section {
+  padding: 2em;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(135, 206, 250, 0.5);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 56, ../sass/style.sass */
+section p {
+  width: 100%;
+}
+/* line 58, ../sass/style.sass */
+section article {
+  border-bottom: 1px dashed #444444;
+}
+/* line 60, ../sass/style.sass */
+section article:last-child {
+  clear: both;
+}
+/* line 62, ../sass/style.sass */
+section header {
+  width: 25%;
+  float: left;
+  margin-right: 1em;
+}
+/* line 66, ../sass/style.sass */
+section header h2 {
+  margin-top: 0em;
+  text-align: left;
+}
+
+/* line 70, ../sass/style.sass */
+aside {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 2em;
+  margin: 3em 20% 2em 20%;
+  background-color: rgba(135, 206, 250, 0.5);
+}
+
+/* line 78, ../sass/style.sass */
+button {
+  padding: 10px 10px;
+  background-color: #ffd3f8;
+  border: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 83, ../sass/style.sass */
+button:hover {
+  background-color: #444444;
+  color: #ffd3f8;
+}
+
+/* line 88, ../sass/style.sass */
+footer {
+  width: 80%;
+  text-align: center;
+}
+/* line 91, ../sass/style.sass */
+footer p {
+  float: right;
+}
