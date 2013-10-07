@@ -1,0 +1,49 @@
+
+
+/* Border-box all the things */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    /* background: #F5F5DC; */
+}
+
+/* Main search thing */
+
+.search {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 600px; 
+    margin: 100px auto; 
+}
+
+.search h1 {
+    font-size: 3em;
+}
+
+
+.search input, button {
+    border-radius: 10px;
+    font-size: 1.5em;
+    
+}
+
+.search input {
+    border: solid 2px #696969; 
+    outline: none;
+    padding: .5em; 
+}
+
+.search button {
+    position: absolute; 
+    background: #00a1cb;
+    color: #FFFFFF;  
+    border: 0; 
+    margin-left: 20px; 
+    padding: calc(.5em + 2px); 
+    
+} 
+
