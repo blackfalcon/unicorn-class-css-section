@@ -15,35 +15,127 @@ body {
 /* Main search thing */
 
 .search {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     max-width: 600px; 
     margin: 100px auto; 
 }
 
-.search h1 {
-    font-size: 3em;
+.search input, button, h1, p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 
 .search input, button {
     border-radius: 10px;
     font-size: 1.5em;
+    padding: 7px;
+
     
 }
 
 .search input {
     border: solid 2px #696969; 
     outline: none;
-    padding: .5em; 
+     
 }
 
-.search button {
+/*.search button {
     position: absolute; 
     background: #00a1cb;
     color: #FFFFFF;  
-    border: 0; 
-    margin-left: 20px; 
-    padding: calc(.5em + 2px); 
+    border: solid 2px #00a1cb; 
+    margin-left: 20px;     
+} */
+
+/* mostly stolen, revise */
+
+.go {
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    font-size: 2.5em;
+    cursor: pointer;
+    padding: 7px;
+    margin: 7px;
     
+}
+
+.go:after {
+    
+    position: relative;
+    padding: 7px;
+    margin: 5px 0;
+    border: solid 2px #00a1cb;
+    border-radius: 8px;
+    background: #00a1cb;
+    content: "Search";
+}
+
+.animation {
+visibility: hidden;
+ }
+   
+.go:checked + .animation {
+    visibility: visible;
+    height: 200px;
+    max-width: 200px;
+    margin: 30px 0; 
+    background-image:url('http://placekitten.com/200/200'); 
+    animation: searching 7s;
+    -webkit-animation: searching 7s; 
+}
+
+.go:checked:after {
+    content: "Searching...";
 } 
+
+.hidden {
+    visibility: hidden;
+}
+
+.search h1 {
+    font-size: 3em;
+}
+
+/* Animation stuff */
+
+@keyframes searching
+{
+25%  {background:url(http://sportscoachradio.com/wp-content/uploads/2013/03/robb-wolf1.jpg) no-repeat;}
+50%  {background:url(http://0.gravatar.com/blavatar/ccfabd854c4f8a824f324d99ae558cc3?s=200) no-repeat;}
+70%  {background:url(http://afmarcom.com/blog/wp-content/uploads/2013/03/2013-03-23-bacon.jpg) no-repeat;}
+85%  {background:url(http://sportscoachradio.com/wp-content/uploads/2013/03/robb-wolf1.jpg) no-repeat;}   
+100% {background:url(http://www.azspagirls.com/files/2013/04/Paleo-Diet-Woman.jpg) no-repeat;}
+}
+
+@-webkit-keyframes searching /* Safari and Chrome */
+{
+25%  {background:url(http://sportscoachradio.com/wp-content/uploads/2013/03/robb-wolf1.jpg) no-repeat;}
+50%  {background:url(http://0.gravatar.com/blavatar/ccfabd854c4f8a824f324d99ae558cc3?s=200) no-repeat;}
+70%  {background:url(http://afmarcom.com/blog/wp-content/uploads/2013/03/2013-03-23-bacon.jpg) no-repeat;}
+85%  {background:url(http://sportscoachradio.com/wp-content/uploads/2013/03/robb-wolf1.jpg) no-repeat;}   
+100% {background:url(http://www.azspagirls.com/files/2013/04/Paleo-Diet-Woman.jpg) no-repeat;}
+}
+
+/*
+.animation {
+    max-width: 600px;
+    margin: 100px auto; 
+    border: solid 1px #000;
+    
+    visibility: hidden;
+    height: 200px;
+    max-width: 200px;
+    margin: 30px 0; 
+    background-image:url('http://placekitten.com/200/200'); 
+    animation: searching 10s;
+    -webkit-animation: searching 10s; 
+}
+
+.animation p {
+    font-size: 2em;
+    margin: 20px 30px;
+
+}
+*/
 
