@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- META CONTENT -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta author="Matt Henry" />
+
+		<title>ECTA | Class Schedule</title>
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!-- STYLESHEETS -->
+		<link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/base.css" >
+		<link type="text/css" rel="stylesheet" href="css/layout.css" >
+		<link type="text/css" rel="stylesheet" href="css/skeleton.css" >
+
+		<style>
+        	.hidden {	display:none;	}
+		</style>
+
+		<!-- JAVA SCRIPT -->
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="site-header sixteen columns">
+				<img src="images/ECTALogo.jpg">
+				<h1>Emerald City Trapeze Arts</h1>
+			</header>
+			<section class="main-section twelve columns">
+				<header>
+					<h3>Class schedule</h3>
+					<hr />
+				</header>
+				<nav class="weekly-navigation">
+					<input name="" type="button" value="<">
+					<h5>August 18 - 24</h5>
+					<input name="" type="button" value=">">
+				</nav>
+				<select class="selectbox">
+					<option value="all" selected>All class types</option>
+					<option value="trapeze">Flying trapeze</option>
+					<option value="aerial">Aerial &amp; Acrobalance</option>
+					<option value="dance">Dance</option>
+				</select>
+				<table>
+					<thead>
+						<tr>
+							<th id="class_name">Class</th>
+							<th id="class_time">Time</th>
+							<th id="class_time">Date</th>
+							<th id="instructor">Instructor</th>
+							<th id="class_type">Type</th>
+							<th id="registration_state"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="day-of-week">
+							<td class="date" colspan="6">Sunday, August 18</td>
+						</tr> 
+						<tr class="class aerial">
+							<td>Beginner Silk</td>
+							<td>6 - 8 PM</td>
+							<td>11/10/2013</td>
+							<td>Emma</td>
+							<td>Aerial</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 
+						<tr class="class trapeze">
+							<td>Flying Trapeze</td>
+							<td>6 - 8 PM</td>
+							<td>11/10/2013</td>
+							<td>-</td>
+							<td>Trapeze</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 
+						<tr class="class dance">
+							<td>Belly Dancing</td>
+							<td>6 - 7:30 PM</td>
+							<td>11/10/2013</td>
+							<td>-</td>
+							<td>Dance</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 
+						<tr class="day-of-week">
+							<td class="date" colspan="6">Sunday, August 18</td>
+						</tr> 
+						<tr class="class aerial">
+							<td>Beginner Silk</td>
+							<td>6 - 8 PM</td>
+							<td>11/10/2013</td>
+							<td>Emma</td>
+							<td>Aerial</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 
+						<tr class="class trapeze">
+							<td>Flying Trapeze</td>
+							<td>6 - 8 PM</td>
+							<td>11/10/2013</td>
+							<td>-</td>
+							<td>Trapeze</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 
+						<tr class="class dance">
+							<td>Belly Dancing</td>
+							<td>6 - 7:30 PM</td>
+							<td>11/10/2013</td>
+							<td>-</td>
+							<td>Dance</td>
+							<td><input name="class_id" type="button" value="Sign Up Now" onclick="window.location.href='registration_form.html'"></td>
+						</tr> 					</tbody>
+				</table>
+			</section>
+			<aside class="contact-info four columns">
+				<h3>Contact us</h3>
+				<hr />
+				<div>Seattle Location</div>
+				<div>206.906.9442</div>
+				<div>info@emeraldcitytrapeze.com</div>
+			</aside>
+			<footer class="site-footer sixteen columns">Copyright &#169; 2013</footer>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+	(function($) {
+		$("document").ready(function() {
+			$( ".selectbox" ).change(function() {
+				var selectionChoice = $(".selectbox").val();				
+				switch ( selectionChoice ) 
+				{
+					case "all": {
+						$(".aerial").removeClass("hidden");
+						$(".trapeze").removeClass("hidden");
+						$(".dance").removeClass("hidden"); 
+						break;
+					}
+					case "trapeze": {
+						$(".trapeze").removeClass("hidden");
+						$(".aerial").addClass("hidden");
+						$(".dance").addClass("hidden");
+						break;
+					}
+					case "aerial": {
+						$(".aerial").removeClass("hidden");
+						$(".dance").addClass("hidden");
+						$(".trapeze").addClass("hidden");
+						break;
+					}
+					case "dance": {
+						$("dance").removeClass("hidden"); 
+						$("aerial").addClass("hidden");
+						$("trapeze").addClass("hidden");
+						break;
+					}
+				}
+			});
+		});
+	})(jQuery);
+	</script>
+
+
+</html>
