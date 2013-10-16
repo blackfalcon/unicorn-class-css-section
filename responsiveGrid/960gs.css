@@ -1,0 +1,237 @@
+
+/*  MAKE LAYOUT RESPONSIVE at 1024px FOR SMALLER SCREENS ================================================================ */
+
+.maincontent {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+
+/*  GRID COLUMN SETUP   ============================================================================= */
+
+.col {
+    display: block;
+    float: left;
+    /* modified this, the original margins makes for crazy space I didn't like */
+    margin: 0 0 0 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+} /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+}
+
+/* not a native supported item, but needed */
+.alpha {
+    margin-left: 0;
+}
+
+
+/*  GRID OF TWELVE   ============================================================================= */
+
+.span_12_of_12 {
+    width: 100%;
+}
+
+.span_11_of_12 {
+    width: 91.46%;
+}
+
+.span_10_of_12 {
+    width: 83%;
+}
+
+.span_9_of_12 {
+    width: 74.54%;
+}
+
+.span_8_of_12 {
+    width: 66.08%;
+}
+
+.span_7_of_12 {
+    width: 57.62%;
+}
+
+.span_6_of_12 {
+    width: 49.16%;
+}
+
+.span_5_of_12 {
+    width: 40.7%;
+}
+
+.span_4_of_12 {
+    width: 32.24%;
+}
+
+.span_3_of_12 {
+    width: 23.78%;
+}
+
+.span_2_of_12 {
+    width: 15.32%;
+}
+
+.span_1_of_12 {
+    width: 6.86%;
+}
+
+/* not a native supported item, but needed */
+/* width includes 1.6% to account for gutters */
+.push_3_of_12 {
+    margin-left: 25.38%;
+}
+
+.push_4_of_12 {
+    margin-left: 33.84%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .span_12_of_12 {
+        width: 100%;
+    }
+
+    .span_11_of_12 {
+        width: 100%;
+    }
+
+    .span_10_of_12 {
+        width: 100%;
+    }
+
+    .span_9_of_12 {
+        width: 100%;
+    }
+
+    .span_8_of_12 {
+        width: 100%;
+    }
+
+    .span_7_of_12 {
+        width: 100%;
+    }
+
+    .span_6_of_12 {
+        width: 100%;
+    }
+
+    .span_5_of_12 {
+        width: 100%;
+    }
+
+    .span_4_of_12 {
+        width: 100%;
+    }
+
+    .span_3_of_12 {
+        width: 100%;
+    }
+
+    .span_2_of_12 {
+        width: 100%;
+    }
+
+    .span_1_of_12 {
+        width: 100%;
+    }
+}
+
+
+/*  GRID OF NINE   ============================================================================= */
+
+
+.span_9_of_9 {
+    width: 100%;
+}
+
+.span_8_of_9 {
+    width: 88.71%;
+}
+
+.span_7_of_9 {
+    width: 77.42%;
+}
+
+.span_6_of_9 {
+    width: 66.13%;
+}
+
+.span_5_of_9 {
+    width: 54.84%;
+}
+
+.span_4_of_9 {
+    width: 43.55%;
+}
+
+.span_3_of_9 {
+    width: 32.26%;
+}
+
+.span_2_of_9 {
+    width: 20.97%;
+}
+
+.span_1_of_9 {
+    width: 9.68%;
+}
+
+/* not a native supported item, but needed */
+.push_3_of_9 {
+    margin-left: 32.26%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .span_9_of_9 {
+        width: 100%;
+    }
+
+    .span_8_of_9 {
+        width: 100%;
+    }
+
+    .span_7_of_9 {
+        width: 100%;
+    }
+
+    .span_6_of_9 {
+        width: 100%;
+    }
+
+    .span_5_of_9 {
+        width: 100%;
+    }
+
+    .span_4_of_9 {
+        width: 100%;
+    }
+
+    .span_3_of_9 {
+        width: 100%;
+    }
+
+    .span_2_of_9 {
+        width: 100%;
+    }
+
+    .span_1_of_9 {
+        width: 100%;
+    }
+}
