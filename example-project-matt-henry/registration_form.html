@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- META CONTENT -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta author="Matt Henry" />
+
+        <title>ECTA | Register for Class</title>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!-- STYLESHEETS -->
+        <link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/base.css" >
+		<link type="text/css" rel="stylesheet" href="css/layout.css" >
+		<link type="text/css" rel="stylesheet" href="css/skeleton.css" >
+
+		<!-- JAVA SCRIPT -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="site-header sixteen columns"><h1>Emerald City Trapeze Arts</h1></header>
+			<section class="main-section twelve columns">
+				<header>
+					<h3>Register for class</h3>
+					<hr />
+				</header>
+		<form action="" method="POST" id="payment-form">
+			<span class="payment-errors"></span>
+
+			<div class="form-row">
+				<label for "cardNumber">Card number</label>
+				<input id "cardNumber" type="text" size="20" data-stripe="number"/>
+			</div>
+			<div class="form-row">
+				<label>Expiration (MM/YYYY)</label>
+				<div class="month-year-calendar">
+					<input type="text" size="2" data-stripe="exp-month"/>
+					<span> / </span>
+					<input type="text" size="4" data-stripe="exp-year"/>
+				</div>
+			</div>
+			<div class="form-row">
+				<label for "cvc">CVC</label>
+				<input id="cvc" type="text" size="4" data-stripe="cvc"/>
+			</div>
+
+		  <button type="submit">Submit Payment</button>
+		</form>
+
+			</section>
+			<aside class="contact-info four columns">
+				<h3>Contact us</h3>
+				<hr />
+				<div>Seattle Location</div>
+				<div>206.906.9442</div>
+				<div>info@emeraldcitytrapeze.com</div>
+			</aside>
+			<footer class="site-footer sixteen columns">Copyright &#169; 2013</footer>
+		</div>
+	</body>
+</html>
