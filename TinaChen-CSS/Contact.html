@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+
+<html>
+	<head>
+			<title>Contact Me</title>
+			<link type="css/text" rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<form name="Email">
+			<label for="iname" Class="lblBlue">Your Name</label>
+				<input type="text" name="name" id="iname" required>
+			<label for="iemail" Class="lblBlue">Your Email</label>
+				<input type="email" name="email" id="iemail" pattern="[^ @]*@[^ @]*" required>
+			<label for="ititle" Class="lblBlue">Title</label>
+				<input type="text" name="title" iname="ititle" required>
+			<label for="imsg" Class="lblBlue">Message</label>
+				<input type="text" name="message" id="imsg" Class="bigTbx" required>
+			<input type="checkbox" name="contactType" value="hi" id="cbxHi">
+				<label for="cbxHi" name="msgType">Just saying hi!</label>
+			<input type="checkbox" name="contactType" value="question" id="cbxQues">
+				<label for="cbxQues" name="msgType">I have a question</label>
+		</form>
+	<section class="center">
+		<input type="submit" Value="Submit">
+		<input type="submit" Value="Discard">
+	<section>
+	</body>
+
+
+</html>

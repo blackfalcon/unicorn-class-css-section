@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+
+.pagebackground{
+	background-color:red;
+	clear:both;
+}
+
+.maincontent{
+	border:1px solid black;
+	background-color:#CCCCB2;
+	box-shadow: 10px 10px 5px #525247;
+	position:relative;
+	overflow:hidden;
+}
+
+.main-section{
+	border:1px solid black;
+	position:relative;
+	overflow:hidden;
+
+}
+
+.site-header, .site-footer{
+	background-color:#e18728;
+}
+
+.site-navigation{
+	background-color:purple;
+	margin-bottom:20px;
+}
+
+article{
+	margin-bottom:30px;
+}
+
+.blogpost{
+	background-color:hotpink;
+	height:300px;
+}
+
+
+.hotlink{
+	background-color:blue;
+	height:100px;
+}
+
+
+.latestvideo{
+	background-color:orange;
+	height:200px;
+}
+
+
+.learning{
+	background-color:green;
+	height:150px;
+}
+
+
+.sponsor{
+	background-color:grey;
+	height:100px;
+}
+
+
+.poll{
+	background-color:coral;
+	height:200px;
+}
+
+
+.subscribe{
+	background-color:orchid;
+	height:100px;
+}
+

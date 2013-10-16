@@ -1,0 +1,79 @@
+h1{
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	color:#0033CC;
+}
+
+nav{
+	margin-bottom:20px;
+}
+
+nav :link{
+	margin-right:10px;
+}
+
+nav :hover {
+	color: #cc0000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size:20px;
+}
+
+nav :visited{
+	color:#C2C2A3;
+}
+
+section{
+	margin-bottom:10px;
+}
+
+section header{
+	font-size:20px;
+	color:#297ACC;
+	font-style: italic;
+	font-weight:bold;
+}
+
+li:nth-child(2n+1){
+	color:#336699;
+}
+
+li:nth-child(2){
+	color:#CC66FF;
+}
+
+
+/*Contact Form Styles Below*/
+
+.lblBlue{
+	color:#0066FF;
+}
+
+input[type="text"], input[type="email"], input[type="submit"]{
+	border:2px dashed #66CCFF;
+}
+
+input[type="text"], input[type="email"]{
+display:block;
+margin-bottom:20px;
+width:30%;
+}
+
+.bigTbx{
+	height:200px;
+}
+
+input[type="submit"]{
+	border-radius:10px;
+	background:#FFFFFF;
+	padding:10px;
+	margin-right:20px;
+}
+
+label[name="msgType"]{
+	color:#0066FF;
+}
+
+.center{
+	margin:30px calc(30%/4);
+}
+
